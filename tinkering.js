@@ -10,7 +10,9 @@ function isThisWorking(input) {
   //return "Returning: I am returning this string!";
 }
 
-isThisWorking(3);*/
+isThisWorking(3);
+
+//Build A Triangle Udacity
 
 function makeLine(length) {
   var line = "";
@@ -31,4 +33,21 @@ function buildTriangle(length) {
 	//console.log(length);
 }
 
-console.log(buildTriangle(10));
+console.log(buildTriangle(10)); */
+
+// function expression catSays
+var catSays = function(max) {
+  var catMessage = "";
+  for (var i = 0; i < max; i++) {
+    catMessage += "meow ";
+  }
+  return catMessage;
+};
+
+// function declaration helloCat accepting a callback
+function helloCat(callbackFunc) {
+  return "Hello " + callbackFunc(3);
+}
+
+// pass in catSays as a callback function
+helloCat(catSays);
